@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3"></script>
+    <link rel="stylesheet" href="./main.css">
+    <title>Login Page With Vue.js</title>
+</head>
+
+<body class="bg-slate-400 w-screen h-screen flex justify-center items-center">
+    <main class="w-11/12 mx-auto h-full lg:h-5/6 flex flex-col lg:flex-row justify-between items-center">
+
+        <section class="w-full h-1/2 lg:w-6/12  lg:h-5/6">
+            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1277.84 1171.59">
+                <defs>
+                    <style>
+                        .cls-1 {
+                            fill: #7ce2e6;
+                        }
+
+                        .cls-2 {
+                            fill: none;
+                        }
+
+                        .cls-2,
+                        .cls-3,
+                        .cls-4,
+                        .cls-7 {
+                            stroke: #00609e;
+                            stroke-linecap: round;
+                            stroke-linejoin: round;
+                            stroke-width: 10px;
+                        }
+
+                        .cls-3,
+                        .cls-6 {
+                            fill: #fff;
+                        }
+
+                        .cls-4 {
+                            fill: #c1f8fa;
+                        }
+
+                        .cls-5,
+                        .cls-7 {
+                            fill: #ffa08e;
+                        }
+                    </style>
+                </defs>
+                <g id="Layer_28" data-name="Layer 28">
+                    <circle class="cls-1" cx="634.87" cy="585.79" r="450.61" />
+                    <path class="cls-2" d="M649.57,1432.37q-11.66-10.47-22.87-21.69Q615,1399,604.19,1386.89"
+                        transform="translate(-402.51 -414.21)" />
+                    <rect class="cls-3" x="530.31" y="481.23" width="209.13" height="209.13" rx="45.56" />
+                    <polyline class="cls-2" points="562.63 571.18 620.42 630.09 707.11 541.5" />
+                    <rect class="cls-3" x="320.52" y="738.74" width="628.69" height="147.52" rx="35.69" />
+                    <rect class="cls-4" x="392.41" y="786.9" width="112.23" height="51.19" rx="14.91" />
+                    <rect class="cls-4" x="581.67" y="786.9" width="112.23" height="51.19" rx="14.91" />
+                    <rect class="cls-4" x="770.93" y="786.9" width="112.23" height="51.19" rx="14.91" />
+                    <rect class="cls-3" x="320.52" y="935.03" width="628.69" height="147.52" rx="35.69" />
+                    <circle class="cls-5" cx="406.71" cy="1008.79" r="25.32" />
+                    <circle class="cls-2" cx="406.71" cy="1008.79" r="25.32" />
+                    <circle class="cls-5" cx="518.22" cy="1008.79" r="25.32" />
+                    <circle class="cls-2" cx="518.22" cy="1008.79" r="25.32" />
+                    <circle class="cls-5" cx="629.73" cy="1008.79" r="25.32" />
+                    <circle class="cls-2" cx="629.73" cy="1008.79" r="25.32" />
+                    <circle class="cls-5" cx="741.24" cy="1008.79" r="25.32" />
+                    <circle class="cls-2" cx="741.24" cy="1008.79" r="25.32" />
+                    <circle class="cls-5" cx="852.75" cy="1008.79" r="25.32" />
+                    <circle class="cls-2" cx="852.75" cy="1008.79" r="25.32" />
+                    <line class="cls-2" x1="552.65" y1="207.74" x2="463.07" y2="288.45" />
+                    <line class="cls-2" x1="428.96" y1="210.49" x2="425.82" y2="270.7" />
+                    <line class="cls-2" x1="306.22" y1="194.9" x2="386.93" y2="284.48" />
+                    <line class="cls-2" x1="308.97" y1="318.59" x2="369.18" y2="321.73" />
+                    <line class="cls-2" x1="417.07" y1="438.58" x2="420.21" y2="378.37" />
+                    <line class="cls-2" x1="539.81" y1="454.17" x2="459.1" y2="364.59" />
+                    <line class="cls-2" x1="537.06" y1="330.48" x2="476.85" y2="327.34" />
+                    <polygon class="cls-3"
+                        points="317.56 734.32 398.36 357.77 21.8 438.57 149.29 519.34 5 663.63 92.49 751.13 236.79 606.83 317.56 734.32" />
+                    <path class="cls-6"
+                        d="M1391.15,1000.62,1258,867.45a22.57,22.57,0,0,1,0-31.93h0a22.57,22.57,0,0,1,31.93,0l133.18,133.17"
+                        transform="translate(-402.51 -414.21)" />
+                    <path class="cls-6"
+                        d="M1423.09,968.69,1373,918.64a22.59,22.59,0,0,1,0-31.93h0a22.58,22.58,0,0,1,31.94,0l50,50"
+                        transform="translate(-402.51 -414.21)" />
+                    <path class="cls-6"
+                        d="M1391.16,1000.63l-82.86-.18a22.59,22.59,0,0,0-22.63,22.59h0a22.58,22.58,0,0,0,22.53,22.58l18.67,0a155.64,155.64,0,0,1,109.75,45.59l24.69,24.69a63.76,63.76,0,0,0,26.46,15.89h0a63.73,63.73,0,0,0,63.65-15.89l56.69-56.69a63.72,63.72,0,0,0,18.24-52.42l-.92-7.94a63.78,63.78,0,0,0-18.24-37.7l-88.3-88.3-7.79-7.79a22.59,22.59,0,0,0-31.93,0h0a22.58,22.58,0,0,0,0,31.94l7.78,7.78"
+                        transform="translate(-402.51 -414.21)" />
+                    <path class="cls-6"
+                        d="M1455,936.76l-28.92-28.92a22.58,22.58,0,0,1,0-31.94h0a22.59,22.59,0,0,1,31.93,0L1487,904.82"
+                        transform="translate(-402.51 -414.21)" />
+                    <rect class="cls-6" x="1524.43" y="1079.46" width="154.32" height="63.89" rx="8.17"
+                        transform="translate(-719.3 1043.81) rotate(-45)" />
+                    <path class="cls-2"
+                        d="M1391.15,1000.62,1258,867.45a22.57,22.57,0,0,1,0-31.93h0a22.57,22.57,0,0,1,31.93,0l133.18,133.17"
+                        transform="translate(-402.51 -414.21)" />
+                    <path class="cls-2"
+                        d="M1423.09,968.69,1373,918.64a22.59,22.59,0,0,1,0-31.93h0a22.58,22.58,0,0,1,31.94,0l50,50"
+                        transform="translate(-402.51 -414.21)" />
+                    <path class="cls-2"
+                        d="M1391.16,1000.63l-82.86-.18a22.59,22.59,0,0,0-22.63,22.59h0a22.58,22.58,0,0,0,22.53,22.58l18.67,0a155.64,155.64,0,0,1,109.75,45.59l24.69,24.69a63.76,63.76,0,0,0,26.46,15.89h0a63.73,63.73,0,0,0,63.65-15.89l56.69-56.69a63.72,63.72,0,0,0,18.24-52.42l-.92-7.94a63.78,63.78,0,0,0-18.24-37.7l-88.3-88.3-7.79-7.79a22.59,22.59,0,0,0-31.93,0h0a22.58,22.58,0,0,0,0,31.94l7.78,7.78"
+                        transform="translate(-402.51 -414.21)" />
+                    <path class="cls-2"
+                        d="M1455,936.76l-28.92-28.92a22.58,22.58,0,0,1,0-31.94h0a22.59,22.59,0,0,1,31.93,0L1487,904.82"
+                        transform="translate(-402.51 -414.21)" />
+                    <rect class="cls-2" x="1524.43" y="1079.46" width="154.32" height="63.89" rx="8.17"
+                        transform="translate(-719.3 1043.81) rotate(-45)" />
+                    <rect class="cls-7" x="663.56" y="157.97" width="573.41" height="190.74" rx="41.79" />
+                    <circle class="cls-2" cx="1535.97" cy="667.55" r="54.38"
+                        transform="translate(-424.66 867.41) rotate(-45)" />
+                    <path class="cls-2" d="M1005.86,420.05q15.66-.84,31.52-.84,16.48,0,32.74.9"
+                        transform="translate(-402.51 -414.21)" />
+                    <path class="cls-2" d="M915.53,432.12q15.33-3.28,31-5.76,16.28-2.58,32.48-4.23"
+                        transform="translate(-402.51 -414.21)" />
+                    <path class="cls-2" d="M828.19,458.17q14.63-5.62,29.71-10.54,15.68-5.08,31.42-9.25"
+                        transform="translate(-402.51 -414.21)" />
+                    <path class="cls-2" d="M746,497.57q13.56-7.86,27.69-15.06,14.68-7.49,29.59-14.06"
+                        transform="translate(-402.51 -414.21)" />
+                    <path class="cls-2" d="M671,549.33q12.16-9.87,25-19.2,13.34-9.69,27-18.51"
+                        transform="translate(-402.51 -414.21)" />
+                    <path class="cls-2" d="M605,612.2q10.47-11.67,21.69-22.88,11.64-11.66,23.79-22.51"
+                        transform="translate(-402.51 -414.21)" />
+                    <path class="cls-2" d="M549.66,684.61q8.54-13.15,17.85-26,9.68-13.33,20-26"
+                        transform="translate(-402.51 -414.21)" />
+                    <path class="cls-2" d="M506.33,764.79q6.36-14.32,13.56-28.46,7.49-14.69,15.67-28.76"
+                        transform="translate(-402.51 -414.21)" />
+                    <path class="cls-2" d="M534.94,1291.37q-7.85-13.56-15.05-27.7-7.49-14.67-14.06-29.58"
+                        transform="translate(-402.51 -414.21)" />
+                    <path class="cls-2" d="M586.71,1366.38q-9.87-12.17-19.2-25-9.69-13.34-18.51-27"
+                        transform="translate(-402.51 -414.21)" />
+                    <path class="cls-2" d="M1469.75,1387.8q-10.47,11.67-21.69,22.88-11.65,11.65-23.79,22.51"
+                        transform="translate(-402.51 -414.21)" />
+                    <path class="cls-2" d="M1525.1,1315.39q-8.53,13.15-17.85,26-9.69,13.33-20,25.95"
+                        transform="translate(-402.51 -414.21)" />
+                    <path class="cls-2" d="M1568.43,1235.21q-6.36,14.32-13.56,28.46-7.48,14.68-15.67,28.76"
+                        transform="translate(-402.51 -414.21)" />
+                    <path class="cls-2" d="M1272.59,469q14.33,6.36,28.46,13.56,14.68,7.49,28.76,15.67"
+                        transform="translate(-402.51 -414.21)" />
+                    <path class="cls-2" d="M1186.62,438.69q15.15,4.05,30.23,8.94,15.68,5.1,30.86,11"
+                        transform="translate(-402.51 -414.21)" />
+                    <path class="cls-2" d="M1097,422.26q15.58,1.62,31.26,4.1,16.27,2.58,32.19,6"
+                        transform="translate(-402.51 -414.21)" />
+                    <path class="cls-2" d="M888.14,1561.31q-15.15-4.05-30.24-8.94-15.66-5.1-30.85-11"
+                        transform="translate(-402.51 -414.21)" />
+                    <path class="cls-2" d="M977.78,1577.74q-15.59-1.62-31.26-4.1-16.28-2.58-32.19-6"
+                        transform="translate(-402.51 -414.21)" />
+                    <path class="cls-2" d="M1068.89,1580q-15.65.84-31.51.84-16.49,0-32.74-.9"
+                        transform="translate(-402.51 -414.21)" />
+                    <path class="cls-2" d="M1159.23,1567.88q-15.33,3.28-31,5.76-16.29,2.58-32.48,4.23"
+                        transform="translate(-402.51 -414.21)" />
+                    <path class="cls-2" d="M1246.57,1541.83q-14.62,5.63-29.72,10.54-15.66,5.09-31.41,9.25"
+                        transform="translate(-402.51 -414.21)" />
+                </g>
+            </svg>
+        </section>
+        <section id="content" class="w-full lg:w-5/12 h-1/2 lg:5/6  mt-2 lg:mt-0">
+            <form @submit.prevent="checkData()" class="w-full h-full  flex flex-col justify-between items-center">
+                <span class="text-xl text-purple-500 font-bold font-mono ">Login Form</span>
+                <div class=" w-10/12 h-1/6">
+                    <div class="w-full h-5/6 flex justify-between items-center">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" v-model="email"
+                            class="w-8/12 h-5/6  rounded-xl border-0 outline-none text-center">
+                    </div>
+                    <span class="text-red-600 w-11/12 text-center bg-orange-300 mx-auto rounded-full"
+                        :class="{'block' : email_valid , 'hidden' : !email_valid}">{{ email_error_message }}</span>
+                </div>
+                <div class=" w-10/12 h-1/6">
+                    <div class="w-full h-5/6 flex justify-between items-center">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" v-model="password"
+                            class="w-8/12 h-5/6  rounded-xl border-0 outline-none text-center">
+                    </div>
+                    <span class="text-red-600 w-11/12 text-center bg-orange-300 mx-auto rounded-full"
+                        :class="{'block' : password_valid , 'hidden' : !password_valid} ">{{ password_error_message }}</span>
+                </div>
+                <button type="submit"
+                    class="w-10/12 h-1/6 hover:bg-green-600 bg-green-500 rounded-lg outline-none border-0">Login</button>
+            </form>
+        </section>
+    </main>
+    <script>
+        const App = {
+            data() {
+                return {
+                    email: "",
+                    password: "",
+                    email_valid: false,
+                    password_valid: false,
+                    email_error_message: "",
+                    password_error_message: "",
+                }
+            },
+            watch: {
+                email(NewValue, OldValue) {
+                    if (this.email_valid) {
+                        if (this.email.length == 0) {
+                            this.email_valid = true;
+                            this.email_error_message = "فیلد ایمیل نمی توانید خالی باشد";
+                        } else if (!this.emailIsValid(this.email)) {
+                            this.email_valid = true;
+                            this.email_error_message = "ساختار ایمیل وارد شده اشتباه است";
+                        } else {
+                            this.email_valid = false;
+                        }
+                    } else {
+                        email_valid = false;
+                    }
+                },
+                password(NewValue, OldValue) {
+                    if (this.password_valid) {
+                        if (this.password.length == 0) {
+                            this.password_valid = true;
+                            this.password_error_message = "فیلد رمزعبور نمی تواند خالی باشد";
+                        } else if (this.password.length > 8) {
+                            this.password_valid = true;
+                            this.password_error_message = "رمزعبور وارد شده بیشتر از 8 کاراکتر است";
+                        } else {
+                            this.password_valid = false;
+                        }
+                    } else {
+                        password_valid = false;
+                    }
+                }
+            },
+            methods: {
+                emailIsValid(a) {
+                    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(a);
+                },
+                checkData() {
+                    if (this.email.length == 0) {
+                        this.email_valid = true;
+                        this.email_error_message = "فیلد ایمیل نمی توانید خالی باشد";
+                    } else if (!this.emailIsValid(this.email)) {
+                        this.email_valid = true;
+                        this.email_error_message = "ساختار ایمیل وارد شده اشتباه است";
+                    } else {
+                        this.email_valid = false;
+                    }
+
+                    if (this.password.length == 0) {
+                        this.password_valid = true;
+                        this.password_error_message = "فیلد رمزعبور نمی تواند خالی باشد";
+                    } else if (this.password.length > 8) {
+                        this.password_valid = true;
+                        this.password_error_message = "رمزعبور وارد شده بیشتر از 8 کاراکتر است";
+                    } else {
+                        this.password_valid = false;
+
+                    }
+
+                    if (this.email_valid == false && this.password_valid == false) {
+                       alert("عملیات موفق")
+                    }
+
+                },
+
+            },
+        };
+        Vue.createApp(App).mount("#content");
+    </script>
+
+</body>
+
+</html>
