@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./sweetalert2.all.js"></script>
+    <link rel="stylesheet" href="./sweetalert2.min.css">
     <script src="https://unpkg.com/vue@3"></script>
     <link rel="stylesheet" href="./main.css">
     <title>Login Page With Vue.js</title>
 </head>
 
 <body class="bg-slate-400 w-screen h-screen flex justify-center items-center">
-    <main class="w-11/12 mx-auto h-full lg:h-5/6 flex flex-col lg:flex-row justify-between items-center">
+    <main class="w-11/12 mx-auto  h-[600px] flex flex-col lg:flex-row justify-between items-center">
 
         <section class="w-full h-1/2 lg:w-6/12  lg:h-5/6">
             <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1277.84 1171.59">
@@ -253,7 +255,11 @@
                     }
 
                     if (this.email_valid == false && this.password_valid == false) {
-                       alert("عملیات موفق")
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'عملیات موفق',
+                            text: ' :) سپاسگزاریم',
+                        })
                     }
 
                 },
